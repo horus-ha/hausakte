@@ -68,7 +68,7 @@ E-Mail: mut.michael.86@gmail.com</p>
 </ul>
 
 <h2>4. Übertragung</h2>
-<p>Die Handys sprechen direkt mit dem Familienserver. Unterwegs läuft die Verbindung durch das verschlüsselte VPN der Familie (WireGuard). Innerhalb des eigenen Heim-WLANs erfolgt die Übertragung derzeit unverschlüsselt (HTTP); das Heimnetz ist dabei nicht von außen zugänglich.</p>
+<p>Die Handys sprechen direkt mit dem Familienserver. Alle Verbindungen sind verschlüsselt (HTTPS/TLS); der Server weist sich mit einem Zertifikat der familieneigenen Zertifizierungsstelle aus, das in der App hinterlegt ist. Unverschlüsselte Verbindungen lässt die App nicht zu. Unterwegs läuft die Verbindung zusätzlich durch das verschlüsselte VPN der Familie (WireGuard).</p>
 
 <h2>5. Speicherdauer und Löschung</h2>
 <ul>
@@ -91,7 +91,7 @@ E-Mail: mut.michael.86@gmail.com</p>
 <p>Fragen zum Datenschutz richten Sie bitte an mut.michael.86@gmail.com.</p>
 
 <h2>Summary in English</h2>
-<p>Bewegungszeit is a private, non-commercial family app for managing children's screen time. All data is stored only on the family's own server in the home network, reachable at home or through the family's VPN; no cloud services, no tracking, no ads, no sharing with third parties. On a child's device the app uses the Android Accessibility Service solely to detect which app is in the foreground, count usage time and overlay blocked apps; it does not read or store any screen content. It reports app names, usage time per app, the list of installed apps, remaining time, screen state, battery level and device model to the family server. Parents can delete all data of a child at any time by removing the child in the app.</p>
+<p>Bewegungszeit is a private, non-commercial family app for managing children's screen time. All data is stored only on the family's own server in the home network, reachable at home or through the family's VPN; all connections are encrypted (HTTPS/TLS); no cloud services, no tracking, no ads, no sharing with third parties. On a child's device the app uses the Android Accessibility Service solely to detect which app is in the foreground, count usage time and overlay blocked apps; it does not read or store any screen content. It reports app names, usage time per app, the list of installed apps, remaining time, screen state, battery level and device model to the family server. Parents can delete all data of a child at any time by removing the child in the app.</p>
 
 <footer><a href="index.html">Startseite</a> · Kontakt: mut.michael.86@gmail.com</footer>
 </div>
