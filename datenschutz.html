@@ -20,13 +20,13 @@ Laurentiusstr. 14<br>
 E-Mail: mut.michael.86@gmail.com</p>
 
 <h2>2. Worum es geht</h2>
-<p>Hausakte ist eine private App für den Eigengebrauch einer Familie. Sie dient dazu, Papierdokumente zu scannen, automatisch zu kategorisieren, im eigenen Google Drive abzulegen und dort durchsuchbar zu machen. Die App wird nicht öffentlich angeboten, enthält keine Werbung und verfolgt keine kommerziellen Zwecke.</p>
+<p>Hausakte ist eine private App für den Eigengebrauch einer Familie. Sie dient dazu, Papierdokumente zu scannen oder vorhandene Dateien (PDFs und Bilder) zu übernehmen, automatisch zu kategorisieren, im eigenen Google Drive abzulegen und dort durchsuchbar zu machen. Die App wird nicht öffentlich angeboten, enthält keine Werbung und verfolgt keine kommerziellen Zwecke.</p>
 <p>Die App betreibt <strong>keine eigenen Server</strong>. Wir als Anbieter erhalten keine Dokumente, Inhalte oder Nutzungsdaten. Einzige Ausnahme ist der optionale Bereich „Haushalt“ (siehe 3 e): Er verbindet sich mit einem Haushaltsbuch, das die Familie selbst auf einem eigenen Server im Heimnetz betreibt.</p>
 
 <h2>3. Welche Daten verarbeitet werden</h2>
 
-<h3>a) Gescannte Dokumente</h3>
-<p>Dokumente werden über den Dokumentenscanner der Google-Play-Dienste mit der Kamera erfasst. Die Bilder und das erzeugte PDF werden vorübergehend im privaten Speicher der App abgelegt und nach erfolgreichem Hochladen gelöscht.</p>
+<h3>a) Gescannte und importierte Dokumente</h3>
+<p>Dokumente werden über den Dokumentenscanner der Google-Play-Dienste mit der Kamera erfasst. Alternativ können Sie vorhandene PDF-Dateien oder Bilder an die App übergeben, entweder über „Teilen“ in einer anderen App oder über „Datei importieren“. Die App erhält dabei nur Zugriff auf die Dateien, die Sie selbst auswählen oder teilen. Eine Berechtigung für den Gerätespeicher ist nicht nötig. Die Bilder und das PDF werden vorübergehend im privaten Speicher der App abgelegt und nach erfolgreichem Hochladen gelöscht.</p>
 
 <h3>b) Texterkennung (OCR)</h3>
 <p>Der Text der Dokumente wird mit Google ML Kit <strong>lokal auf dem Gerät</strong> erkannt. Für die Texterkennung werden keine Bilder an Server gesendet.</p>
@@ -35,13 +35,13 @@ E-Mail: mut.michael.86@gmail.com</p>
 <p>Nach Ihrer ausdrücklichen Zustimmung (Google-Anmeldung) greift die App auf Ihr Google Drive zu, um:</p>
 <ul>
 <li>Ordner im von Ihnen gewählten Drive-Ordner anzulegen,</li>
-<li>gescannte PDFs samt Beschreibung, Schlagwörtern und erkanntem Text hochzuladen,</li>
+<li>gescannte oder importierte PDFs samt Beschreibung, Schlagwörtern und erkanntem Text hochzuladen,</li>
 <li>abgelegte Dokumente zu suchen und zu öffnen.</li>
 </ul>
 <p>Die Dokumente werden ausschließlich in Ihrem eigenen Google Drive bzw. in Ordnern gespeichert, die Sie selbst mit Familienmitgliedern geteilt haben.</p>
 
 <h3>d) Kategorisierung und Suche mit Google Gemini</h3>
-<p>Zur automatischen Einordnung wird der erkannte Text eines Dokuments an die Gemini-API von Google gesendet. Gemini liefert Kategorie, Titel, Absender, Datum, Betrag, eine kurze Zusammenfassung und Suchbegriffe zurück. Auch Suchanfragen werden an Gemini gesendet, um sie in Suchfilter umzuwandeln. Die Bilder bzw. PDFs selbst werden nicht an Gemini übertragen. Die Nutzung erfolgt über einen eigenen API-Zugang. Für Nutzer im Europäischen Wirtschaftsraum, der Schweiz und dem Vereinigten Königreich gelten nach den Gemini-API-Bedingungen auch bei kostenloser Nutzung die Datenregeln der kostenpflichtigen Dienste: Google verwendet die Anfragen und Antworten nicht zur Verbesserung seiner Produkte. Google kann Anfragen für einen begrenzten Zeitraum zur Erkennung von Missbrauch protokollieren.</p>
+<p>Zur automatischen Einordnung wird der erkannte Text eines Dokuments und bei importierten Dateien deren Dateiname an die Gemini-API von Google gesendet. Gemini liefert Kategorie, Titel, Absender, Datum, Betrag, eine kurze Zusammenfassung und Suchbegriffe zurück. Auch Suchanfragen werden an Gemini gesendet, um sie in Suchfilter umzuwandeln. Die Bilder bzw. PDFs selbst werden nicht an Gemini übertragen. Die Nutzung erfolgt über einen eigenen API-Zugang. Für Nutzer im Europäischen Wirtschaftsraum, der Schweiz und dem Vereinigten Königreich gelten nach den Gemini-API-Bedingungen auch bei kostenloser Nutzung die Datenregeln der kostenpflichtigen Dienste: Google verwendet die Anfragen und Antworten nicht zur Verbesserung seiner Produkte. Google kann Anfragen für einen begrenzten Zeitraum zur Erkennung von Missbrauch protokollieren.</p>
 
 <h3>e) Bereich „Haushalt“ (eigenes Haushaltsbuch im Heimnetz)</h3>
 <p>Der Bereich „Haushalt“ zeigt die Oberfläche eines selbst betriebenen Haushaltsbuchs an. Es läuft auf einem Server im eigenen Heimnetz der Familie (Standardadresse 192.168.2.170) und ist nur von dort erreichbar; unterwegs ist der Bereich ausgeschaltet. Dabei gilt:</p>
@@ -95,7 +95,7 @@ E-Mail: mut.michael.86@gmail.com</p>
 <p>Fragen zum Datenschutz richten Sie bitte an mut.michael.86@gmail.com.</p>
 
 <h2>Summary in English</h2>
-<p>Hausakte is a private, non-commercial family app. It has no backend servers; the optional "Haushalt" section only connects to the family's own self-hosted household-budget server in the home network (financial data such as bank transactions, encrypted, never leaving the home network). Scanned documents are processed on the device (OCR) and stored only in the user's own Google Drive. Extracted text and search queries are sent to the Google Gemini API for categorisation. No tracking, no ads, no sale of data. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked at any time at myaccount.google.com/permissions.</p>
+<p>Hausakte is a private, non-commercial family app. It has no backend servers; the optional "Haushalt" section only connects to the family's own self-hosted household-budget server in the home network (financial data such as bank transactions, encrypted, never leaving the home network). Scanned or imported documents (PDFs/images the user explicitly shares with or selects in the app) are processed on the device (OCR) and stored only in the user's own Google Drive. Extracted text and search queries are sent to the Google Gemini API for categorisation. No tracking, no ads, no sale of data. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked at any time at myaccount.google.com/permissions.</p>
 
 <footer><a href="index.html">Startseite</a> · Kontakt: mut.michael.86@gmail.com</footer>
 </div>
